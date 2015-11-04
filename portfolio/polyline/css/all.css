@@ -1,0 +1,912 @@
+/* font-family: "GothamProRegular"; */
+
+@font-face {
+    font-family: "GothamProRegular";
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"), url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "GothamProBold"; */
+
+@font-face {
+    font-family: "GothamProBold";
+    src: url("../fonts/GothamProBold/GothamProBold.eot");
+    src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"), url("../fonts/GothamProBold/GothamProBold.woff") format("woff"), url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "GothamProLight"; */
+
+@font-face {
+    font-family: "GothamProLight";
+    src: url("../fonts/GothamProLight/GothamProLight.eot");
+    src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix")format("embedded-opentype"), url("../fonts/GothamProLight/GothamProLight.woff") format("woff"), url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "GothamProBlack"; */
+
+@font-face {
+    font-family: "GothamProBlack";
+    src: url("../fonts/GothamProBlack/GothamProBlack.eot");
+    src: url("../fonts/GothamProBlack/GothamProBlack.eot?#iefix")format("embedded-opentype"), url("../fonts/GothamProBlack/GothamProBlack.woff") format("woff"), url("../fonts/GothamProBlack/GothamProBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    color: #000;
+    background: #efefee;
+    font: 13px/18px verdana, geneva, sans-serif;
+}
+/* General reset */
+
+form,
+fieldset {
+    margin: 0;
+    padding: 0;
+    border-style: none;
+}
+
+img {
+    border-style: none;
+}
+
+input,
+select,
+textarea {
+    vertical-align: middle;
+    font: 100% arial, helvetica, sans-serif;
+}
+
+input:focus {
+    outline: none;
+}
+
+a {
+    color: #f00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* General settings */
+
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 100%;
+    padding-top: 50px;
+    position: relative;
+}
+
+.logo-holder {
+    overflow: hidden;
+    width: 960px;
+    padding: 0 10px 55px 0;
+}
+
+.logo {
+    float: left;
+    background: url(../img/logo.png) no-repeat 0 0;
+    width: 594px;
+    height: 92px;
+}
+
+.phone {
+    float: right;
+    margin-top: 24px;
+    margin-right: 8px;
+    text-align: right;
+}
+
+.phone strong {
+    font-family: "GothamProBlack";
+    font-size: 29px;
+    line-height: 29px;
+    color: #a21b36;
+    display: block;
+}
+
+.phone span {
+    margin-top: 8px;
+    display: block;
+    font-family: "GothamProRegular";
+    font-size: 13px;
+    line-height: 13px;
+    color: #494949;
+}
+
+.nav-holder {
+    border-top: 16px solid #d9ddde;
+    border-bottom: 5px solid #d9ddde;
+    background-color: #7b7b7b;
+    width: 100%;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 0 0 8px 0;
+}
+
+.nav li a {
+    display: inline-block;
+    font-family: "GothamProRegular";
+    font-size: 15px;
+    line-height: 15px;
+    display: block;
+    padding: 19px 18px 13px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav li a.active,
+.nav li a:hover {
+    background-color: #d9ddde;
+    color: #9f1d34;
+    text-decoration: none;
+}
+
+.nav-abs {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    position: absolute;
+    bottom: -40px;
+    right: 38px;
+    z-index: 3;
+}
+
+.nav-abs li {
+    float: left;
+    padding-left: 1px;
+}
+
+.nav-abs li a {
+    text-transform: uppercase;
+    color: #535250;
+    font-family: "GothamProRegular";
+    font-size: 12px;
+    line-height: 12px;
+    display: block;
+    padding: 14px 23px;
+    background-color: #d9ddde;
+}
+
+.nav-abs li a.download {
+    padding: 14px 33px 14px 21px;
+    background-image: url(../img/arrow-abs-nav.png);
+    background-repeat: no-repeat;
+    background-position: 86px 50%;
+}
+
+.gallery {
+    overflow: hidden;
+    width: 960px;
+    position: relative;
+}
+
+a.prev {
+    display: block;
+    width: 78px;
+    height: 78px;
+    background-color: rgba(81, 81, 81, 0.7);
+    position: absolute;
+    background-image: url(../img/gallery-a_prev.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    top: 38%;
+    left: 0;
+    z-index: 5;
+}
+
+a.next {
+    display: block;
+    width: 78px;
+    height: 78px;
+    background-color: rgba(81, 81, 81, 0.7);
+    position: absolute;
+    background-image: url(../img/gallery-a_next.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    top: 39%;
+    right: 0;
+}
+
+.inner {
+    width: 960px;
+    /* ширина должна быть равна сумме длин видимых элементов прокрутки включая падинги.. */
+    
+    overflow: hidden;
+    position: relative;
+}
+
+.inner ul.list {
+    position: relative;
+    /* тут можно применить как relative так и absolute */
+    
+    width: 99999px;
+    /* !!! */
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.inner ul.list li {
+    /* для елементов прокрутки нельзя задавать margin */
+    
+    float: left;
+    width: 960px;
+    position: relative;
+}
+
+.inner .list li a img {
+    display: block;
+    width: 960px;
+    height: 345px;
+}
+
+.inner .list li div.description {
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    left: 0;
+}
+
+.description span {
+    font-family: "GothamProLight";
+    font-size: 36px;
+    line-height: 36px;
+    display: inline-block;
+    background-color: rgba(255, 162, 5, 0.8);
+    color: #fff;
+    padding: 8px 10px;
+}
+
+.description span + span {
+    background-color: rgba(147, 24, 47, 0.75);
+}
+
+.enumeration {
+    background-color: #93182f;
+    padding: 4px 60px;
+    margin-bottom: 31px;
+    text-align: center;
+}
+
+.enumeration ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.enumeration ul li {
+    display: inline-block;
+    padding: 0 10px;
+    background: url(../img/marker.png) no-repeat 0 40%;
+}
+
+.enumeration ul li a {
+    font-family: "GothamProRegular";
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.enumeration ul li a:hover {
+    text-decoration: none;
+    color: #ffa205;
+}
+
+.scrollable {
+    width: 960px;
+    height: 527px;
+    overflow: hidden;
+    margin-bottom: 38px;
+}
+
+.long {
+    width: 1920px;
+}
+
+.row {
+    width: 1920px;
+    overflow: hidden;
+}
+
+.item {
+    background-color: #fff;
+    /*    position: relative;*/
+    
+    width: 470px;
+    float: left;
+    padding: 0 10px 0 0;
+    border-bottom: 2px solid #93182f;
+    /*    overflow: hidden;*/
+}
+
+.hscroll-left {
+    background-color: #93182f;
+    background-image: url(../img/button-left.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+input[type="submit"],
+.hscroll-left,
+.hscroll-right,
+.hscroll-slider,
+.hscroll-line {
+    cursor: pointer;
+}
+
+.hscroll-right {
+    width: 32px;
+    background-color: #93182f;
+    background-image: url(../img/button-right.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.hscroll-left:hover,
+.hscroll-right:hover {
+    background-color: #ffa204;
+}
+
+.hscroll-line {
+    height: 6px !important;
+    background-color: #7b7b7b;
+    top: 14px;
+}
+
+.hscroll-slider {
+    height: 14px !important;
+    width: 277px;
+    background-color: #93182f;
+    top: 9px;
+}
+
+.image-box {
+    float: left;
+    width: 240px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.item-right {
+    float: right;
+    width: 210px;
+}
+
+.item-left img {
+    width: 240px;
+    height: 230px;
+}
+
+h3 {
+    color: #3d3d3d;
+    margin: 0 0 9px 0;
+    padding: 12px 0 0 0;
+    font-family: "GothamProBold";
+    font-size: 15px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.item span {
+    color: #93182f;
+    font-weight: bold;
+}
+
+.item p {
+    padding-right: 15px;
+}
+
+p {
+    margin: 0;
+    color: #403b3b;
+}
+
+.btn {
+    color: #fff;
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    padding: 10px 51px 10px 26px;
+    background-color: #93182f;
+    background-image: url(../img/btn-arrrow.png);
+    background-repeat: no-repeat;
+    background-position: 200px 50%;
+}
+
+.btn:hover {
+    text-decoration: none;
+    background-color: #ffa205;
+}
+
+.social {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 46px;
+}
+
+.info {
+    padding: 37px 0 0 24px;
+    width: 542px;
+    background-color: #fff;
+    border-bottom: 2px solid #93182f;
+    position: relative;
+    float: left;
+}
+
+.info>span {
+    color: #3d3d3d;
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    border-bottom: 1px solid #93182f;
+    padding-bottom: 14px;
+    margin-bottom: 21px;
+}
+
+h4 {
+    margin: 0 0 14px 0;
+    padding: 0 0 0 0;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+h4 a {
+    color: #93182f;
+    text-decoration: underline;
+}
+
+h4 a.active,
+h4 a:hover {
+    color: #ffa205;
+}
+
+.info p {
+    margin: 0 0 42px 0;
+}
+
+.info .btn {
+    padding: 5px 26px 5px 26px;
+    position: static;
+    float: right;
+    background-image: none;
+}
+
+#vk_groups {
+    float: right;
+}
+
+.gallery1 {
+    overflow: hidden;
+    width: 960px;
+    position: relative;
+    margin-bottom: 48px;
+    background-color: #7b7b7b;
+    background-image: url(../img/quotes.png), url(../img/yellow-square.png);
+    background-repeat: no-repeat;
+    background-position: 9px 18px, 0 102%;
+}
+
+.gallery1 a.prev {
+    display: block;
+    width: 42px;
+    height: 40px;
+    background-color: #848484;
+    position: absolute;
+    background-image: url(../img/gallery2-a_prev.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    top: 150px;
+    left: 636px;
+    z-index: 5;
+}
+
+.gallery1 a.next {
+    display: block;
+    width: 42px;
+    height: 40px;
+    background-color: #848484;
+    position: absolute;
+    background-image: url(../img/gallery2-a_next.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    top: 150px;
+    right: 240px;
+}
+
+.gallery1 a.prev:hover,
+.gallery1 a.next:hover {
+    background-color: #707070;
+}
+
+.gallery1 .inner-gal1 {
+    margin-left: 40px;
+    width: 920px;
+    /* ширина должна быть равна сумме длин видимых элементов прокрутки включая падинги.. */
+    
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery1 .inner-gal1 .list {
+    position: relative;
+    width: 99999px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.gallery1 .inner-gal1 .list li {
+    overflow: hidden;
+    width: 920px;
+    position: relative;
+    background-color: #7b7b7b;
+    float: left;
+}
+
+.inner-gal1 .image-box {
+    float: right;
+    padding-right: 0;
+    position: relative;
+}
+
+.image-box a.btn {
+    bottom: 0;
+    left: 0;
+    padding: 11px 50px 11px 26px;
+}
+
+.list li blockquote {
+    margin: 0;
+    width: 630px;
+    padding: 31px 25px 40px;
+    float: left;
+    color: #fff;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 21px;
+}
+
+.list li img {
+    width: 240px;
+    height: 190px;
+    float: right;
+}
+
+.bg {
+    position: absolute;
+    width: 40px;
+    height: 150px;
+    background-color: #7b7b7b;
+    top: 0;
+    left: 0;
+    float: left;
+}
+
+.application {
+    width: 960px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.app-desc {
+    width: 415px;
+    float: left;
+    background-color: #fff;
+    padding: 38px 30px 35px 35px;
+}
+
+h2 {
+    margin: 0;
+    color: #7b7b7b;
+    font-family: "GothamProRegular";
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+
+.app-desc p {
+    color: #393939;
+}
+
+.app-item {
+    float: left;
+    position: relative;
+}
+
+.app-item img {
+    width: 240px;
+    height: 240px;
+}
+
+.drop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 183px;
+    background-color: rgba(147, 24, 47, 0.7);
+    display: none;
+    text-align: center;
+    padding: 42px 15px 15px 15px;
+}
+
+.drop strong,
+.drop span {
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.drop strong {
+    font-family: "GothamProBlack";
+    font-size: 18px;
+    line-height: 22px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 13px;
+    margin: 0 15px;
+}
+
+.drop span {
+    padding-top: 20px;
+    font-family: "GothamProRegular";
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.drop a {
+    text-decoration: none;
+    display: block;
+}
+
+div.app-item.active div.drop,
+.app-item:hover .drop {
+    display: block;
+}
+
+.subscribe {
+    width: 927px;
+    padding: 28px 10px 28px 23px;
+    background-color: #fff;
+    margin-bottom: 39px;
+    overflow: hidden;
+}
+
+.subs-descr,
+input {
+    float: left;
+}
+
+.subscribe form {
+    float: right;
+}
+
+.subs-descr h3 {
+    padding: 0;
+    font-family: "GothamProRegular";
+    font-size: 19px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #454545;
+    font-weight: normal;
+}
+
+.subs-descr span {
+    display: block;
+    font-style: italic;
+    color: #454545;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: none;
+}
+
+input[type="text"] {
+    display: block;
+    margin-left: 8px;
+    width: 183px;
+    height: 31px;
+    padding: 0 10px;
+    border: 1px solid #a2a1a1;
+    border-radius: 3px;
+    box-shadow: inset 2px 3px 3px rgba(0, 0, 0, 0.21);
+    font-size: 12px;
+    line-height: 12px;
+    color: #979ea1;
+}
+
+input[type="submit"] {
+    height: 33px;
+    width: 82px;
+    display: block;
+    margin-left: 7px;
+    font-family: "GothamProBold";
+    font-size: 12px;
+    color: #fff;
+    background-color: #93182f;
+    border: none;
+}
+
+.footer {
+    padding-bottom: 113px;
+}
+
+.footer-top {
+    width: 896px;
+    background-color: #7b7b7b;
+    padding: 35px 32px 20px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.col-1 {
+    width: 250px;
+    float: left;
+    padding-right: 15px;
+}
+
+.footer-top h3 {
+    color: #fff;
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 26px;
+}
+
+.footer-top strong,
+.footer-top span {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    font-family: arial, sans-serif;
+}
+
+.footer-top strong {
+    margin-bottom: 12px;
+}
+
+.footer-top span {
+    margin-bottom: 21px;
+}
+
+.col-1 span > span {
+    margin-bottom: 12px;
+}
+
+.col-1 span:nth-of-type(3) {
+    margin-top: 26px;
+}
+
+.footer-top a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer-top a:hover {
+    text-decoration: none;
+}
+
+.col-2 {
+    width: 326px;
+    float: left;
+}
+
+.col-2 p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 12px;
+    line-height: 19px;
+    font-family: arial, sans-serif;
+    border-left: 1px dashed #fff;
+    border-right: 1px dashed #fff;
+}
+
+.col-2 h3,
+.col-3 h3,
+.col-2 p {
+    padding-left: 25px;
+    padding-right: 18px;
+}
+
+.col-2 h3,
+.col-3 h3 {
+    margin-bottom: 24px;
+}
+
+.col-3 {
+    width: 305px;
+    float: left;
+}
+
+.col-3 ul {
+    margin: 0;
+    padding: 0 0 0 25px;
+    list-style: none;
+}
+
+.col-3 ul li {
+    margin-bottom: 4px;
+}
+
+.col-3 ul li a {
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer-bottom {
+    width: 960px;
+    overflow: hidden;
+    color: #3f3a3a;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: arial, sans-serif;
+}
+
+.col-left {
+    padding-top: 5px;
+    padding-left: 25px;
+    width: 310px;
+    overflow: hidden;
+    float: left;
+}
+
+.copy {
+    width: 75px;
+    padding-right: 10px;
+    text-align: right;
+    float: left;
+}
+
+.comp-name {
+    width: 225px;
+    float: left;
+}
+
+.comp-name strong {
+    display: block;
+}
+
+.col-right {
+    width: 200px;
+    float: right;
+}
+
+.col-right a {
+    color: #3f3a3a;
+    text-decoration: none;
+}
+
+.col-right a:hover {
+    text-decoration: underline;
+}
+/*
+.item:after,
+.info:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/

@@ -1,0 +1,40 @@
+
+
+@font-face {
+    font-family: 'comfortaabold';
+    src: url('comfortaa-bold.eot');
+    src: url('comfortaa-bold.eot?#iefix') format('embedded-opentype'),
+         url('comfortaa-bold.woff') format('woff'),
+         url('comfortaa-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'comfortaalight';
+    src: url('comfortaa-light.eot');
+    src: url('comfortaa-light.eot?#iefix') format('embedded-opentype'),
+         url('comfortaa-light.woff') format('woff'),
+         url('comfortaa-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'comfortaaregular';
+    src: url('comfortaa-regular.eot');
+    src: url('comfortaa-regular.eot?#iefix') format('embedded-opentype'),
+         url('comfortaa-regular.woff') format('woff'),
+         url('comfortaa-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
